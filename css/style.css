@@ -1,0 +1,58 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+.icon-img img {
+    width: 50px; 
+    height: auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    size: cover;
+}
+/* Base card styles */
+.skill-card, .project-card {
+    background-color: #1a202c; 
+    border-radius: 0.5rem; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+    text-align: center;
+    padding: 1.5rem; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill-card:hover, .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Primary button styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem; 
+    background-color: #2dd4bf; 
+    color: #1f2937; 
+    font-weight: bold;
+    border-radius: 0.5rem; 
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: #0d9488; 
+    transform: translateY(-2px);
+}
+
+/* Secondary button styles */
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #2dd4bf;
+    color: #2dd4bf;
+}
+
+.btn-secondary:hover {
+    background-color: #2dd4bf;
+    color: #1f2937;
+    transform: translateY(-2px);
+}

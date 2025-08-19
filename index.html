@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/favicon.png" type="image/png">
+    <title>Uttam | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-900 text-gray-200 font-sans leading-relaxed">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 z-50 w-full bg-gray-900/80 backdrop-blur-sm shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="icon-img"><img src="./assets/favicon.png" alt="icon"></a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-teal-400 transition-colors">About</a>
+                <a href="#skills" class="hover:text-teal-400 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-teal-400 transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-teal-400 transition-colors">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-2xl text-teal-400">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-gray-800/90 text-center py-4 space-y-4 transition-transform duration-300 ease-in-out">
+            <a href="#about" class="block py-2 hover:bg-gray-700">About</a>
+            <a href="#skills" class="block py-2 hover:bg-gray-700">Skills</a>
+            <a href="#projects" class="block py-2 hover:bg-gray-700">Projects</a>
+            <a href="#contact" class="block py-2 hover:bg-gray-700">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-24">
+
+        <!-- About Section (Homepage) -->
+        <section id="about" class="min-h-screen flex flex-col justify-center items-center text-center">
+            <div class="space-y-6">
+                <img class="rounded-lg w-80 h-80 mx-auto border-4  shadow-xl transition-transform hover:scale-105"
+                    src="./assets/Photo.jpg" alt="Your professional headshot">
+
+               
+                <h1 class="text-5xl md:text-6xl font-extrabold text-white">Santoki Uttam</h1>
+
+              
+                <p class="text-2xl md:text-3xl font-light text-gray-400">
+                    <span id="typing-text" class="text-white"></span>
+                    <span class="animate-pulse-slow">|</span>
+                </p>
+                <p class=" max-w-4xl text-lg text-gray-400 mt-4">
+                    Hi, I'm Uttam Santoki,From Vadodara , Gujrat , India.
+                <p class=" max-w-4xl text-lg text-gray-400 mt-4">
+                    I'm currently pursuing my 7th semester of a Bachelor's degree in Computer Science at Parul
+                    University.. I enjoy turning ideas
+                    into real projects and exploring how technology can make everyday life easier.
+                </p>
+                </p>
+                <p class=" max-w-4xl text-lg text-gray-400 mt-4">
+                    I work with Java, Python, C++, SQL, MongoDB, HTML, CSS, and JavaScript, and I'm currently diving
+                    deeper
+                    into the MERN stack to sharpen my full-stack development skills. Along the way, I've built projects
+                    like a Hotel Booking System (with authentication and error handling features) and a Library
+                    Management System in Java and SQL. These experiences have helped me grow my problem-solving mindset
+                    and understand how to build practical, working solutions.
+                </p>
+                <p class=" max-w-4xl text-lg text-gray-400 mt-4">
+                    I'm also curious about data science and machine learning, and I love exploring new ways to combine
+                    development with intelligent systems. My goal is to keep learning, take on real-world challenges,
+                    and contribute to projects that make a difference.
+                </p>
+
+
+                <!-- Social Links -->
+                <div class="flex justify-center space-x-6 mt-8">
+                    <a href="https://github.com/Uttam-57" target="_blank"
+                        class="text-gray-400 hover:text-teal-400 transition-colors"><i
+                            class="fab fa-github text-3xl"></i></a>
+                    <a href="https://www.linkedin.com/in/uttam-santoki-9b9834254/" target="_blank"
+                        class="text-gray-400 hover:text-teal-400 transition-colors"><i
+                            class="fab fa-linkedin text-3xl"></i></a>
+                    <a href="mailto:uttamsantoki05@gmail.com"
+                        class="text-gray-400 hover:text-teal-400 transition-colors"><i
+                            class="fas fa-envelope text-3xl"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 min-h-screen flex flex-col justify-center items-center text-center">
+            <h2 class="text-4xl font-bold text-white mb-12">My Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+                <div class="skill-card">
+                    <i class="fab fa-html5 text-6xl text-orange-500 mb-4"></i>
+                    <p class="text-lg font-semibold">HTML5</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt text-6xl text-blue-500 mb-4"></i>
+                    <p class="text-lg font-semibold">CSS3</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js-square text-6xl text-yellow-500 mb-4"></i>
+                    <p class="text-lg font-semibold">JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <img class="w-16 h-16 mx-auto mb-4" src="./assets/express.js.png" alt="React Logo">
+                    <p class="text-lg font-semibold">Express.js</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-node-js text-6xl text-green-500 mb-4"></i>
+                    <p class="text-lg font-semibold">Node.js</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt text-6xl text-red-600 mb-4"></i>
+                    <p class="text-lg font-semibold">Git</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database text-6xl text-blue-700 mb-4"></i>
+                    <p class="text-lg font-semibold">SQL</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database text-6xl text-green-700 mb-4"></i>
+                    <p class="text-lg font-semibold">MongoDB</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-java text-6xl text-blue-700 mb-4"></i>
+                    <p class="text-lg font-semibold">Java</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-python text-6xl text-yellow-500 mb-4"></i>
+                    <p class="text-lg font-semibold">Python</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 min-h-screen flex flex-col justify-center items-center">
+            <h2 class="text-4xl font-bold text-white mb-12 text-center">My Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8 w-full">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <img class="w-full h-auto object-cover rounded-t-lg" src="./assets/project 1 preview.png"
+                        alt="Project 1 Preview">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-white">Library Management System</h3>
+                        <p class="text-gray-400 mb-4">A robust and efficient Library Management System designed using
+                            Java and SQL for managing library operations seamlessly. This project focuses on performing
+                            essential tasks like book management, member records, issue/return tracking, and database
+                            interactions through SQL queries..</p>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/Uttam-57/library-management-system" target="_blank" class="btn">
+                                <i class="fab fa-github mr-2"></i>GitHub
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <img class="w-full h-auto object-cover rounded-t-lg" src="./assets/project 2 preview.png"
+                        alt="Project 2 Preview">
+                    <img class="w-full h-auto object-cover rounded-t-lg" src="./assets/project 2.1 preview.png"
+                        alt="Project 2 Preview">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 mt-5 text-white">Hotel Booking</h3>
+                        <p class="text-gray-400 mb-4">
+                        This project highlights my expertise in backend development using Node.js and Express. It
+                        features a RESTful API for managing hotel data, with robust error handling and ongoing
+                        enhancements such as authentication, authorization, user login/logout, data search, hotel
+                        filtering, and map integration.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/Uttam-57/Hotel-Booking/tree/dev" target="_blank" class="btn">
+                                <i class="fab fa-github mr-2"></i>GitHub
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 min-h-screen flex flex-col justify-center items-center text-center">
+            <h2 class="text-4xl font-bold text-white mb-12">Get In Touch</h2>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-xl w-full max-w-2xl">
+                <p class="text-gray-400 mb-6">I'm currently open to new opportunities. Feel free to send me a message!
+                </p>
+                <!-- This form is for UI design purposes only and is not functional -->
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <input type="text" id="name" name="name" placeholder="Your Name"
+                            class="w-full p-3 rounded-lg bg-gray-700 border-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-400 transition-all">
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="Your Email"
+                            class="w-full p-3 rounded-lg bg-gray-700 border-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-400 transition-all">
+                    </div>
+                    <div>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message"
+                            class="w-full p-3 rounded-lg bg-gray-700 border-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-400 transition-all"></textarea>
+                    </div>
+                    <button type="submit" class="btn w-full">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-6 text-center text-gray-400 border-t border-gray-700">
+        <p>&copy; 2024 uttam santoki. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
