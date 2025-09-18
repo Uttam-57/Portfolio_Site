@@ -56,3 +56,22 @@ img {
     color: #1f2937;
     transform: translateY(-2px);
 }
+/* ... (your existing styles) ... */
+
+/* Contact Form New Styles */
+#contact-form {
+    position: relative;
+}
+
+#form-status {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.success {
+    color: #34d399; /* A green color for success messages */
+}
+
+.error {
+    color: #f87171; /* A red color for error messages */
+}
